@@ -13,7 +13,7 @@ const fetchSofa = async () => {
     .then(response => response.json())
     .then((result) =>{
         article = result
-        console.log(article.price);
+        console.log(article.colors);
         image.innerHTML += `<img src="${article.imageUrl}" alt="Photographie d'un canapé">`
         title.innerHTML += `${article.name}`
         price.innerHTML = `${article.price}`
